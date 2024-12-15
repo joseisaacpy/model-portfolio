@@ -1,0 +1,157 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* variaveis */
+:root {
+  --font1: "Poppins", serif;
+
+  --bg-sec-text: #ffe0bd;
+}
+
+/* reset */
+* {
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  font-family: var(--font1);
+}
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding: 2em;
+  background: #000;
+  color: #fff;
+}
+header h1 {
+  font-size: 1.5em;
+  margin-left: 2em;
+}
+header h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  display: inline-block;
+  margin-right: 2em;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+/* dev geral */
+div.geral {
+  width: 100%;
+  margin: 0 auto;
+}
+/* main */
+/* sections em geral */
+section {
+  height: 100dvh;
+}
+/* section inicial */
+section.sec-inicial {
+  background: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?q=80&w=1834&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    no-repeat center center/ cover fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+section.sec-inicial::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 8;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.4) 60%,
+    #000 100%
+  );
+}
+/* h1 section inicial */
+section.sec-inicial h1 {
+  font-size: 4em;
+  color: #fff;
+  z-index: 10;
+}
+/* h2 section inicial */
+section h2 {
+  z-index: 10;
+  font-size: 2.5em;
+  color: #fff;
+}
+/* sections com texto */
+section.sec-texto {
+  box-shadow: inset 1px 1px 20px rgba(0, 0, 0, 0.474);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--bg-sec-text);
+}
+section.sec-texto p {
+  max-width: 90%;
+  text-align: center;
+  padding-bottom: 1em;
+}
+section.sec-texto img#dev {
+  width: 35%;
+  margin: 0 auto;
+  display: block;
+}
+/* section com imagem */
+section.parallax-1 {
+  background: url(https://images.unsplash.com/photo-1508739773434-c26b3d09e071?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    no-repeat center center/cover fixed;
+  box-shadow: inset 1px 1px 20px rgba(0, 0, 0, 0.474);
+}
+/* footer */
+footer {
+  width: 100%;
+  padding: 0.5em;
+  background-color: #000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  color: #fff;
+}
+footer p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+
+/* responsivo */
+@media (max-width: 710px) {
+  section.sec-texto img#dev {
+    width: 90%;
+  }
+}
