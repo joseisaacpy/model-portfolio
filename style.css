@@ -95,6 +95,10 @@ section.sec-inicial h1 {
   color: #fff;
   z-index: 10;
 }
+section.sec-inicial p {
+  color: #fff;
+  z-index: 10;
+}
 /* h2 section inicial */
 section h2 {
   z-index: 10;
