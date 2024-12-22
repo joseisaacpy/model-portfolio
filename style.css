@@ -158,10 +158,18 @@ section#projetos div.grade-projetos div.projeto {
   text-align: center;
   width: 40%;
   background-color: #000;
-  color: var(--bg-sec-text);
+  color: #fff;
   padding: 0.5em;
   border-radius: 8px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.792);
+}
+section#projetos div.grade-projetos div.projeto a {
+  font-weight: 600;
+  color: var(--bg-sec-text);
+  text-decoration: none;
+}
+section#projetos div.grade-projetos div.projeto a:hover {
+  text-decoration: underline;
 }
 
 /* footer */
