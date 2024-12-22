@@ -30,6 +30,9 @@ header {
   padding: 2em;
   background: #000;
   color: #fff;
+
+  position: fixed;
+  z-index: 11;
 }
 header h1 {
   font-size: 1.5em;
@@ -62,6 +65,8 @@ div.geral {
 /* main */
 /* sections em geral */
 section {
+  scroll-margin-top: 90px; /*Isso é para quando clicar na ancora do header, ele não ficar em cima do meu conteúdo*/
+
   height: 100dvh;
 }
 /* section inicial */
