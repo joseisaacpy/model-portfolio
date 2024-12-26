@@ -70,7 +70,7 @@ div.geral {
 /* main */
 /* sections em geral */
 section {
-  scroll-margin-top: 90px; /*Isso é para quando clicar na ancora do header, ele não ficar em cima do meu conteúdo*/
+  scroll-margin-top: 100px; /*Isso é para quando clicar na ancora do header, ele não ficar em cima do meu conteúdo*/
 
   height: 100dvh;
 }
@@ -111,7 +111,7 @@ section.sec-inicial p {
 /* h2 section inicial */
 section h2 {
   z-index: 10;
-  font-size: 2.5em;
+  font-size: 2.4em;
   color: #fff;
 }
 /* sections com texto */
@@ -179,6 +179,7 @@ section#formulario {
 }
 section#formulario h2 {
   text-align: center;
+  padding-top: 1.5em 0 0;
 }
 
 section#formulario form {
@@ -208,7 +209,16 @@ section#formulario form textarea {
   border: none;
   padding: 0.5em;
   font-size: 1.2em;
+  font-family: var(--font1);
 }
+/* quando clica no input e textarea */
+section#formulario form input:focus,
+section#formulario form textarea:focus {
+  outline: none; /* Remove o contorno padrão */
+  box-shadow: 0 0 5px rgba(112, 197, 220, 0.5); /* Sombra ao focar */
+  border: 1px solid #70c5dc; /* Borda ao focar */
+}
+/* botao do form */
 section#formulario form button {
   cursor: pointer;
   font-weight: bold;
