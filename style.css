@@ -1,3 +1,4 @@
+/* animação */
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
@@ -6,7 +7,7 @@
 }
 /* variaveis */
 :root {
-  --font1: "Poppins", serif;
+  --font1: "Poppins", sans-serif;
   --bg-sec-text: #ffe0bd;
 }
 
@@ -172,21 +173,52 @@ section#projetos div.grade-projetos div.projeto a:hover {
   text-decoration: underline;
 }
 
-/* section tec */
-section.sec-texto-2 {
-  background: rgb(50, 58, 205);
+/* section com formulario */
+section#formulario {
+  background: linear-gradient(#68afc2, #1f2b2f);
 }
-section.sec-texto-2 .grade-tecnologias {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+section#formulario h2 {
   text-align: center;
-  flex-wrap: wrap;
 }
-section.sec-texto-2 img {
-  border: 1px solid;
-  width: 35%;
+
+section#formulario form {
+  background: linear-gradient(-30deg, #212a2b, gray);
+  width: 50%;
+  margin: 2% auto;
+
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+  padding: 1em;
+
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.911);
+  /* border: 1px solid; */
+  border-radius: 10px;
+}
+section#formulario form label {
+  font-weight: bold;
+}
+section#formulario form input {
+  border-radius: 8px;
+  padding: 0.8em;
+  border: none;
+}
+section#formulario form textarea {
+  border-radius: 8px;
+  border: none;
+  padding: 0.5em;
+  font-size: 1.2em;
+}
+section#formulario form button {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5em;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+section#formulario form button:hover {
+  background: #70c5dc;
 }
 /* footer */
 footer {
@@ -212,5 +244,9 @@ footer div.redes img {
 @media (max-width: 710px) {
   section.sec-texto img#dev {
     width: 90%;
+  }
+  section#formulario form {
+    width: 90%;
+    margin-top: 10%;
   }
 }

@@ -49,32 +49,6 @@
             criar aplicações modernas e acessíveis.
           </p>
         </section>
-        <!-- section -->
-        <section class="sec-texto sec-texto-2" id="tecnologias">
-          <h2>Tecnologias</h2>
-          <!-- html -->
-          <div class="grade-tecnologias">
-            <figure>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-              />
-              <figcaption>HTML5</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-              />
-              <figcaption>HTML5</figcaption>
-            </figure>
-            <!-- css -->
-            <figure>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-              />
-              <figcaption>CSS3</figcaption>
-            </figure>
-          </div>
-        </section>
         <!-- section projetos / links -->
         <section class="parallax parallax-2" id="projetos">
           <h2>Projetos</h2>
@@ -125,6 +99,25 @@
               >
             </div>
           </div>
+        </section>
+        <!-- section formulario -->
+        <section id="formulario">
+          <h2>Formulário de Contato</h2>
+          <form action="enviardados.php" method="get">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required rows="5"></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
         </section>
       </main>
       <footer>
